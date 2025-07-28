@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoder–Ockuly Family Tree</title>
+  <style>
+    .family-tree ul {
+      padding-top: 20px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    }
+    .family-tree li {
+      text-align: center;
+      position: relative;
+      padding: 20px 5px 0 5px;
+    }
+    .family-tree li::before,
+    .family-tree li::after {
+      content: '';
+      position: absolute; top: 0; width: 50%; height: 20px;
+      border-top: 2px solid #444;
+    }
+    .family-tree li::before { right: 50%; }
+    .family-tree li::after  { left: 50%; }
+    .family-tree li:only-child::before,
+    .family-tree li:only-child::after { display: none; }
+    .family-tree li:first-child::before,
+    .family-tree li:last-child::after { border: none; }
+    .family-tree ul ul::before {
+      content: '';
+      position: absolute; top: 0; left: 50%;
+      border-left: 2px solid #444;
+      width: 0; height: 20px;
+    }
+
+    .person {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 2px solid #444;
+      border-radius: 6px;
+      background: #fff;
+      min-width: 140px;
+    }
+    .person img {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 6px;
+    }
+    .person .name {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .person .dates {
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="family-tree">
+    <ul>
+      <!-- Top generation: Yoder & Ockuly grandparents -->
+      <li>
+        <div class="person">
+          <img src="PATH_TO_PHOTO" alt="Vaughn Yoder">
+          <span class="name">Vaughn Yoder</span>
+          <span class="dates">13 Apr 1921&nbsp;–</span>
+        </div>
+        <div class="person">
+          <img src="PATH_TO_PHOTO" alt="Lois Yoder">
+          <span class="name">Lois Yoder</span>
+          <span class="dates">23 Jan 1925&nbsp;–</span>
+        </div>
+        <ul>
+          <!-- Their children -->
+          <li>
+            <div class="person">
+              <img src="PATH_TO_PHOTO" alt="Leslie Yoder">
+              <span class="name">Leslie Yoder</span>
+              <span class="dates">21 Apr 1951</span>
+            </div>
+          </li>
+          <li>
+            <div class="person">
+              <img src="PATH_TO_PHOTO" alt="Michele Yoder">
+              <span class="name">Michele Yoder</span>
+              <span class="dates">21 Sep 1957</span>
+            </div>
+          </li>
+          <li>
+            <div class="person">
+              <img src="PATH_TO_PHOTO" alt="Thomas Yoder">
+              <span class="name">Thomas Yoder</span>
+              <span class="dates">4 Jan 1954</span>
+            </div>
+            <ul>
+              <!-- Thomas’s marriage to Karen (divorced) -->
+              <li>
+                <div class="person">
+                  <img src="PATH_TO_PHOTO" alt="Karen Ockuly">
+                  <span class="name">Karen Ockuly</span>
+                  <span class="dates">8 Apr 1961</span>
+                </div>
+                <ul>
+                  <!-- Their children -->
+                  <li>
+                    <div class="person">
+                      <img src="PATH_TO_PHOTO" alt="Carla Yoder">
+                      <span class="name">Carla Yoder (Duvall)</span>
+                      <span class="dates">16 Oct 1975</span>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Hugo Kerl">
+                          <span class="name">Hugo Kerl</span>
+                          <span class="dates">2 Nov 1981</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Aiden Duvall">
+                          <span class="name">Aiden Duvall</span>
+                          <span class="dates">2 Jun 2007</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="person">
+                      <img src="PATH_TO_PHOTO" alt="Susan Yoder">
+                      <span class="name">Susan Yoder (Fayne)</span>
+                      <span class="dates">24 Feb 1970</span>
+                    </div>
+                    <ul>
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Olivia Fayne">
+                          <span class="name">Olivia Fayne</span>
+                          <span class="dates">15 Mar 1982</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Lauren Fayne">
+                          <span class="name">Lauren Fayne</span>
+                          <span class="dates">15 Mar 1982</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Lucas Fayne">
+                          <span class="name">Lucas Fayne</span>
+                          <span class="dates">2 Nov 1981</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <div class="person">
+                      <img src="PATH_TO_PHOTO" alt="James Yoder">
+                      <span class="name">James Yoder</span>
+                      <span class="dates">19 Feb 1981</span>
+                    </div>
+                    <ul>
+                      <!-- James + Ashley -->
+                      <li>
+                        <div class="person">
+                          <img src="PATH_TO_PHOTO" alt="Ashley Soroka">
+                          <span class="name">Ashley Soroka (Yoder)</span>
+                          <span class="dates">24 Mar 1983</span>
+                        </div>
+                        <ul>
+                          <li>
+                            <div class="person">
+                              <span class="name">Preston Yoder</span>
+                              <span class="dates">20 Oct 2016</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="person">
+                              <span class="name">Mia Yoder</span>
+                              <span class="dates">25 Jun 2022</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Top generation: Ockuly grandparents on Karen’s side -->
+      <li>
+        <div class="person">
+          <img src="PATH_TO_PHOTO" alt="Kenneth Ockuly">
+          <span class="name">Kenneth Ockuly</span>
+          <span class="dates">29 May 1938</span>
+        </div>
+        <div class="person">
+          <img src="PATH_TO_PHOTO" alt="Margaret Ockuly">
+          <span class="name">Margaret Ockuly</span>
+          <span class="dates">8 Sep 1938</span>
+        </div>
+        <ul>
+          <li>
+            <div class="person">
+              <img src="PATH_TO_PHOTO" alt="Kelly Ockuly">
+              <span class="name">Kelly Ockuly</span>
+              <span class="dates">21 Apr 1961</span>
+            </div>
+            <ul>
+              <li>
+                <div class="person">
+                  <img src="PATH_TO_PHOTO" alt="Michael Sloan">
+                  <span class="name">Michael Sloan</span>
+                  <span class="dates">2 Nov 1981</span>
+                </div>
+              </li>
+              <li>
+                <div class="person">
+                  <img src="PATH_TO_PHOTO" alt="Christine Sloan">
+                  <span class="name">Christine Sloan</span>
+                  <span class="dates">2 Nov 1981</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
